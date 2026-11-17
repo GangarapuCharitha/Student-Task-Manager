@@ -1,0 +1,168 @@
+
+body {
+    background-color: #f4f6f9;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation */
+.navbar {
+    padding: 15px;
+}
+
+/* Dashboard */
+.dashboard-card {
+    background-color: white;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    height: 100%;
+}
+
+.dashboard-card p {
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.dashboard-card h2 {
+    color: #0d6efd;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Form */
+.card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.card-header {
+    padding: 15px;
+}
+
+.form-control,
+.form-select {
+    padding: 10px;
+}
+
+/* Task List */
+#taskList {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    background: #f8f9fa;
+    padding: 16px;
+    border-radius: 10px;
+    border-left: 5px solid #0d6efd;
+}
+
+.task-main {
+    flex: 1;
+    min-width: 0;
+}
+
+.task-title {
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 7px;
+    overflow-wrap: anywhere;
+}
+
+.task-title.done {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.task-meta {
+    color: #666;
+    font-size: 13px;
+    margin-bottom: 0;
+}
+
+/* Priority */
+.priority {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 7px;
+}
+
+.priority.High {
+    background: #ffe0e0;
+    color: #c62828;
+}
+
+.priority.Medium {
+    background: #fff1cc;
+    color: #9a6700;
+}
+
+.priority.Low {
+    background: #d9f5df;
+    color: #218838;
+}
+
+/* Task Actions */
+.task-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    align-items: center;
+}
+
+.task-actions button {
+    font-size: 13px;
+}
+
+.complete-label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 13px;
+}
+
+/* Messages */
+#message {
+    font-size: 14px;
+}
+
+/* Footer */
+footer {
+    color: #777;
+    background-color: white;
+}
+
+/* Mobile Responsive */
+@media (max-width: 576px) {
+
+    .task-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .task-actions {
+        width: 100%;
+    }
+
+    .task-actions button {
+        flex: 1;
+    }
+
+    .dashboard-card {
+        padding: 15px 8px;
+    }
+
+    .dashboard-card h2 {
+        font-size: 24px;
+    }
+}
